@@ -1,5 +1,5 @@
 def run_guessing_game
-  random_number = rand(1..6)
+  random_number = (rand(1..6)).to_s
   user_number = gets.chomp
   if user_number == random_number
     puts "You guessed the correct number!"
@@ -9,3 +9,4 @@ def run_guessing_game
     puts "Sorry! The computer guessed #{random_number}."
   end
 end
+
